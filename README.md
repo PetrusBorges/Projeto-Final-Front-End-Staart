@@ -48,7 +48,7 @@ Aplicação feita em React + Vite.
 - [ReactJS](https://reactjs.org/)
 - [Firebase](https://firebase.google.com/)
 - [Typescript](https://www.typescriptlang.org/)
-- [Styled Swiper](https://swiperjs.com)
+- [React Swiper](https://swiperjs.com)
 - [React Toastify](https://fkhadra.github.io/react-toastify/introduction)
 - [React Router Dom](https://reactrouter.com/en/main)
 - [Styled Components](https://styled-components.com/)
