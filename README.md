@@ -11,19 +11,23 @@ Repositório criado exclusivamente para armazenar o projeto final da jornada de 
 
 ## 🛠️ Como usar a aplicação:
 
-- Copie a chave ssh do repositório e execute o comando no seu terminal para dentro de uma pasta qualquer: `git clone + a chave ssh`;
+- Clone o projeto e acesse a pasta com os comandos abaixo;
 
-![image](https://user-images.githubusercontent.com/105453766/218284246-bec5440a-c4cc-48e1-9d26-223dc532ac90.png)
+```sh
+https://github.com/PetrusBorges/Projeto-Final-Front-End-Staart.git && cd Projeto-Final-Front-End-Staart
+```
 
-OU
+- Na pasta raiz do projeto instale as dependências do projeto com o comandos abaixo;
 
-- Baixe o arquivo .rar e descompacte para dentro de uma pasta qualquer;
+```sh
+yarn
+```
 
-![image](https://user-images.githubusercontent.com/105453766/218284311-7f3abd24-4577-4cef-8e20-fe59934a081b.png)
+- Logo em seguida rode o projeto com o comandos abaixo;
 
-- Logo em seguida abra o terminal dentro da pasta que você clonou o repositório ou descompactou o arquivo .rar baixado e execute o comando `yarn` para instalar as dependências do projeto;
-
-- Para finalizar e rodar a aplicação no seu computador execute `yarn dev` para começar a visualizar a aplicação no seu navegador;
+```sh
+yarn dev
+```
 
 ## 📋 Projeto
 
