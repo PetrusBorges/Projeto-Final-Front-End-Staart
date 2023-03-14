@@ -17,13 +17,13 @@ Repositório criado exclusivamente para armazenar o projeto final da jornada de 
 https://github.com/PetrusBorges/Projeto-Final-Front-End-Staart.git && cd Projeto-Final-Front-End-Staart
 ```
 
-- Na pasta raiz do projeto instale as dependências do projeto com o comandos abaixo;
+- Na pasta raiz do projeto instale as dependências com o comando abaixo;
 
 ```sh
 yarn
 ```
 
-- Logo em seguida rode o projeto com o comandos abaixo;
+- Logo em seguida rode o projeto com o comando abaixo;
 
 ```sh
 yarn dev
