@@ -2,14 +2,14 @@
 
 DEPLOY da aplicação: [Projeto Final Front-End Staart](https://projeto-final-front-end-staart.netlify.app)
 
-## Demostração 🎞
+## 🎞 Demostração
 https://user-images.githubusercontent.com/105453766/218283965-ae7302fd-4c40-4eb3-8acd-a57a2e2bce80.mp4
 
-## CreatePUSH 💻
+## 💻 CreatePUSH
 
 Repositório criado exclusivamente para armazenar o projeto final da jornada de Front-End disponibilizado pela [Staart](https://staart.com).
 
-## 🛠️ Como usar a aplicação:
+## 🛠️ Como usar a aplicação
 
 - Clone o projeto e acesse a pasta com os comandos abaixo;
 
@@ -42,13 +42,16 @@ Aplicação feita em React + Vite.
 
 ## 🛠️ Feito com
 
-✔️ REACT
-
-✔️ CONSUMO DE API
-
-✔️ REACT TOASTIFY
-
-✔️ REACT STYLED
+- [Axios](https://axios-http.com/)
+- [ESLint](https://eslint.org/)
+- [ViteJS](https://vitejs.dev/)
+- [ReactJS](https://reactjs.org/)
+- [Firebase](https://firebase.google.com/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Styled Swiper](https://swiperjs.com)
+- [React Toastify](https://fkhadra.github.io/react-toastify/introduction)
+- [React Router Dom](https://reactrouter.com/en/main)
+- [Styled Components](https://styled-components.com/)
 
 ## ✒️ Autores
 
