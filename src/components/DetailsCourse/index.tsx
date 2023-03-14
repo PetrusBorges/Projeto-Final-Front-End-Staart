@@ -8,7 +8,7 @@ import { SvgTecnologies } from '../SvgTecnologies';
 import { SvgPlanet } from '../SvgPlanet';
 import { SvgSquares } from '../SvgSquares';
 
-interface CardInfoProps {
+export interface CardInfoProps {
   title: string;
   description: string;
 }
