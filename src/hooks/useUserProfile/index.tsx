@@ -26,7 +26,9 @@ export function useUserProfile() {
         setIsLoading(true);
         await new Promise(resolve => setTimeout(resolve, 1000));
         toast.error('Insira um email diferente do atual!');
-      } catch {} finally {
+      } catch {
+        toast.warning('Error no servidor!');
+      } finally {
         setIsLoading(false);
       }
     }
