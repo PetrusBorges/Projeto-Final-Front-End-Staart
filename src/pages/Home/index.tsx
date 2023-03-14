@@ -7,6 +7,7 @@ import { JouneysCard } from '../../components/JouneysCard';
 import { DetailsCourse } from '../../components/DetailsCourse';
 import { deatilsCourseMock } from '../../components/DetailsCourse/mock';
 import { TestimonyPeople } from '../../components/TestimonyPeople';
+import { testimonyPeopleMock } from '../../components/TestimonyPeople/mock';
 import { Footer } from '../../components/Footer';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -81,21 +82,7 @@ export function Home() {
             <h1 className='title'>A comunidade tá voando! Veja o depoimento de quem já encontrou um novo desafio profissional.</h1>
 
             <TestimonyPeople
-              testimonyInfo={[{
-                name: 'Lucas Solza',
-                jobName: 'Desenvolvedor Front-End',
-                description: 'Realizei o sonho de trabalhar com tecnologia, tudo graças aos professores do CreatePush!'
-              },
-              {
-                name: 'Bruna Melo',
-                jobName: 'Desenvolvedora Back-End',
-                description: 'Finalizar o curso e receber a notícia de ser aprovada no processo seletivo foi incrível, obrigada aos professores e colegas!'
-              },
-              {
-                name: 'Alex Ferreira',
-                jobName: 'Desenvolvedor Full-Stack',
-                description: 'O CreatePush me mostrou que compartilhar conhecimento com outras pessoas é a melhor forma de crescer!'
-              }]}
+              testimonyInfo={testimonyPeopleMock}
             />
           </TestimonyInfo>
         </Content>

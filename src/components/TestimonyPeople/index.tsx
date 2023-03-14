@@ -4,7 +4,7 @@ import Avatar1 from '../../assets/images/avatar1.svg';
 import Avatar2 from '../../assets/images/avatar3.svg';
 import Avatar3 from '../../assets/images/avatar2.svg';
 
-interface PeopleInfo {
+export interface PeopleInfo {
   name: string;
   jobName: string;
   description: string;
