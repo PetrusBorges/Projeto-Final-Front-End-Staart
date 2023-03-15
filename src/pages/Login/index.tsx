@@ -1,5 +1,6 @@
-import { Container, Content, Form, ButtonContainer, Footer} from './styles';
+import { Container, ContainerLogin, Content, Form, ButtonContainer, Footer} from './styles';
 
+import { LoginCard } from '../../components/LoginCard';
 import { FormGroup } from '../../components/FormGroup';
 import { Input } from '../../components/input';
 import { Button } from '../../components/Button';
@@ -14,45 +15,49 @@ export function Login() {
 
   return (
     <Container>
-      <Content>
-        <h1>Login</h1>
-        <Form onSubmit={handleSubmit}>
-          <FormGroup error={getErrorMessageByFieldName('email')}>
-            <Input
-              value={email}
-              type='email'
-              placeholder='Email'
-              onChange={handleEmailChange}
-              error={getErrorMessageByFieldName('email')}
-            />
-          </FormGroup>
+      <LoginCard />
 
-          <FormGroup>
-            <Input
-              value={password}
-              type='password'
-              maxLength={8}
-              placeholder='Senha'
-              onChange={(event) => setPassword(event.target.value)}
-            />
-          </FormGroup>
+      <ContainerLogin>
+        <Content>
+          <h1>Login</h1>
+          <Form onSubmit={handleSubmit}>
+            <FormGroup error={getErrorMessageByFieldName('email')}>
+              <Input
+                value={email}
+                type='email'
+                placeholder='Email'
+                onChange={handleEmailChange}
+                error={getErrorMessageByFieldName('email')}
+              />
+            </FormGroup>
 
-          <ButtonContainer>
-            <Button
-              type='submit'
-              disabled={!isEmailOk || !isPasswordOk}
-              isLoading={isLoading}
-            >
+            <FormGroup>
+              <Input
+                value={password}
+                type='password'
+                maxLength={8}
+                placeholder='Senha'
+                onChange={(event) => setPassword(event.target.value)}
+              />
+            </FormGroup>
+
+            <ButtonContainer>
+              <Button
+                type='submit'
+                disabled={!isEmailOk || !isPasswordOk}
+                isLoading={isLoading}
+              >
               Fazer login
-            </Button>
-          </ButtonContainer>
-        </Form>
+              </Button>
+            </ButtonContainer>
+          </Form>
 
-        <Footer>
-          <Link to='/signup'>Não tenho uma conta</Link>
-          <Link to='/forgot-password'>Esqueci minha senha</Link>
-        </Footer>
-      </Content>
+          <Footer>
+            <Link to='/signup'>Não tenho uma conta</Link>
+            <Link to='/forgot-password'>Esqueci minha senha</Link>
+          </Footer>
+        </Content>
+      </ContainerLogin>
     </Container>
   );
 }
