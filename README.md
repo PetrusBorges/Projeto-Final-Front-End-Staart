@@ -3,7 +3,7 @@
 DEPLOY da aplicação: [Projeto Final Front-End Staart](https://projeto-final-front-end-staart.netlify.app)
 
 ## 🎞 Demostração
-https://user-images.githubusercontent.com/105453766/218283965-ae7302fd-4c40-4eb3-8acd-a57a2e2bce80.mp4
+https://user-images.githubusercontent.com/105453766/225408276-3733262c-4d47-4f64-ba9c-818009a36fce.mp4
 
 ## 💻 CreatePUSH
 
