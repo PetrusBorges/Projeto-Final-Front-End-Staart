@@ -1,5 +1,6 @@
-import { Container, Content, Form, ButtonContainer, Footer} from './styles';
+import { Container, ContainerForgetPassword, Content, Form, ButtonContainer, Footer} from './styles';
 
+import { LoginCard } from '../../components/LoginCard';
 import { FormGroup } from '../../components/FormGroup';
 import { Input } from '../../components/input';
 import { Button } from '../../components/Button';
@@ -14,35 +15,39 @@ export function ForgotPassword() {
 
   return (
     <Container>
-      <Content>
-        <h1>Recuperar senha</h1>
-        <Form onSubmit={handleSubmit}>
-          <FormGroup error={getErrorMessageByFieldName('email')}>
-            <Input
-              value={email}
-              type='email'
-              placeholder='Email'
-              onChange={handleEmailChange}
-              error={getErrorMessageByFieldName('email')}
-            />
-          </FormGroup>
+      <LoginCard />
 
-          <ButtonContainer>
-            <Button
-              type='submit'
-              disabled={!isEmailOk}
-              isLoading={isLoading}
-            >
+      <ContainerForgetPassword>
+        <Content>
+          <h1>Recuperar senha</h1>
+          <Form onSubmit={handleSubmit}>
+            <FormGroup error={getErrorMessageByFieldName('email')}>
+              <Input
+                value={email}
+                type='email'
+                placeholder='Email'
+                onChange={handleEmailChange}
+                error={getErrorMessageByFieldName('email')}
+              />
+            </FormGroup>
+
+            <ButtonContainer>
+              <Button
+                type='submit'
+                disabled={!isEmailOk}
+                isLoading={isLoading}
+              >
               Recuperar senha
-            </Button>
-          </ButtonContainer>
-        </Form>
+              </Button>
+            </ButtonContainer>
+          </Form>
 
-        <Footer>
-          <Link to='/signup'>Não tenho uma conta</Link>
-          <Link to='/'>Fazer Login</Link>
-        </Footer>
-      </Content>
+          <Footer>
+            <Link to='/signup'>Não tenho uma conta</Link>
+            <Link to='/'>Fazer Login</Link>
+          </Footer>
+        </Content>
+      </ContainerForgetPassword>
     </Container>
   );
 }

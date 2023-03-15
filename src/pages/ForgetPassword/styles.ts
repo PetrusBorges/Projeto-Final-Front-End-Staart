@@ -2,6 +2,12 @@ import styled from 'styled-components';
 import { device } from '../../components/device';
 
 export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ContainerForgetPassword = styled.div`
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
