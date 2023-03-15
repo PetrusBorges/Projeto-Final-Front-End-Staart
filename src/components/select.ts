@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { device } from './device';
+import arrowSelect from '../assets/images/arrowSelect.svg';
 
 export const Select = styled.select`
   cursor: pointer;
@@ -13,6 +14,15 @@ export const Select = styled.select`
   background-color: transparent;
   color: ${({ theme }) => theme.color[200]};
   border-bottom: 1px solid ${({ theme }) => theme.color[200]};
+  background-image: url(${arrowSelect});
+  background-repeat: no-repeat;
+  background-position: 95%;
+
+  > option {
+    background-color: ${({ theme }) => theme.color[800]};
+    color: ${({ theme }) => theme.color[50]};
+    font-size: 16px;
+  }
 
   @media ${device.mobileM} {
     width: 250px;
