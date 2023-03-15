@@ -1,5 +1,6 @@
-import { Container, Content, Form, ButtonContainer, Footer, ErrorButon} from './styles';
+import { Container, ContainerSignUp, Content, Form, ButtonContainer, Footer, ErrorButon} from './styles';
 
+import { LoginCard } from '../../components/LoginCard';
 import { FormGroup } from '../../components/FormGroup';
 import { Input } from '../../components/input';
 import { Button } from '../../components/Button';
@@ -14,62 +15,66 @@ export function SignUp() {
 
   return (
     <Container>
-      <Content>
-        <h1>Cadastro</h1>
-        <Form onSubmit={handleSubmit}>
-          <FormGroup error={getErrorMessageByFieldName('email')}>
-            <Input
-              value={email}
-              type='email'
-              placeholder='Email'
-              onChange={handleEmailChange}
-              error={getErrorMessageByFieldName('email')}
-            />
-          </FormGroup>
+      <LoginCard />
 
-          <FormGroup>
-            <Input
-              value={password}
-              type='password'
-              maxLength={8}
-              placeholder='Senha com até 8 dígitos'
-              onChange={(event) => setPassword(event.target.value)}
-            />
-          </FormGroup>
+      <ContainerSignUp>
+        <Content>
+          <h1>Cadastro</h1>
+          <Form onSubmit={handleSubmit}>
+            <FormGroup error={getErrorMessageByFieldName('email')}>
+              <Input
+                value={email}
+                type='email'
+                placeholder='Email'
+                onChange={handleEmailChange}
+                error={getErrorMessageByFieldName('email')}
+              />
+            </FormGroup>
 
-          <FormGroup>
-            <Input
-              value={confirmPassword}
-              type='password'
-              maxLength={8}
-              placeholder='Confirme sua senha com até 8 dígitos'
-              onChange={(event) => setConfirmPassword(event.target.value)}
-            />
-          </FormGroup>
+            <FormGroup>
+              <Input
+                value={password}
+                type='password'
+                maxLength={8}
+                placeholder='Senha com até 8 dígitos'
+                onChange={(event) => setPassword(event.target.value)}
+              />
+            </FormGroup>
 
-          <ButtonContainer>
-            <Button
-              type='submit'
-              disabled={!isEmailOk || !isPasswordOk}
-              isLoading={isLoading}
-            >
+            <FormGroup>
+              <Input
+                value={confirmPassword}
+                type='password'
+                maxLength={8}
+                placeholder='Confirme sua senha com até 8 dígitos'
+                onChange={(event) => setConfirmPassword(event.target.value)}
+              />
+            </FormGroup>
+
+            <ButtonContainer>
+              <Button
+                type='submit'
+                disabled={!isEmailOk || !isPasswordOk}
+                isLoading={isLoading}
+              >
               Fazer cadastro
-            </Button>
+              </Button>
 
-          </ButtonContainer>
-        </Form>
+            </ButtonContainer>
+          </Form>
 
-        {!isPasswordOk && (
-          <ErrorButon>
+          {!isPasswordOk && (
+            <ErrorButon>
             Suas senhas não coincidem!
-          </ErrorButon>
-        )}
+            </ErrorButon>
+          )}
 
-        <Footer>
-          <Link to='/'>Ja tenho uma conta</Link>
-          <Link to='/forgot-password'>Esqueci minha senha</Link>
-        </Footer>
-      </Content>
+          <Footer>
+            <Link to='/'>Ja tenho uma conta</Link>
+            <Link to='/forgot-password'>Esqueci minha senha</Link>
+          </Footer>
+        </Content>
+      </ContainerSignUp>
     </Container>
   );
 }
