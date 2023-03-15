@@ -34,6 +34,8 @@ yarn dev
 CreatePUSH é uma plataforma de cursos que lida com fluxos de APIs relacionadas a listagem de jornadas, cursos e aulas, tratando com dados relacionados a detalhes das jornadas, bem como a quantidade de cursos dentro delas e informações detalhadas sobre os cursos e as suas respectivas aulas.
 Aplicação feita em React + Vite.
 
+![image](https://user-images.githubusercontent.com/105453766/225394276-e5519ef9-73bf-43ae-843d-ef1bdf8f2e4d.png)
+
 ![screencapture-localhost-5173-journeys-2023-02-11-19_21_21](https://user-images.githubusercontent.com/105453766/218283530-a1e6d9cc-2a21-4d2f-b1fc-d7d8d59ee7a4.png)
 
 ![screencapture-localhost-5173-journeys-eca8e48a-57b3-46a1-a6ae-923aca77fc11-2023-02-11-19_21_56](https://user-images.githubusercontent.com/105453766/218283555-a602ecdc-6df2-4813-b1f9-39ac38cbed18.png)
