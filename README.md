@@ -14,7 +14,7 @@ Repositório criado exclusivamente para armazenar o projeto final da jornada de 
 - Clone o projeto e acesse a pasta com os comandos abaixo;
 
 ```sh
-https://github.com/PetrusBorges/Projeto-Final-Front-End-Staart.git && cd Projeto-Final-Front-End-Staart
+git clone https://github.com/PetrusBorges/Projeto-Final-Front-End-Staart.git && cd Projeto-Final-Front-End-Staart
 ```
 
 - Na pasta raiz do projeto instale as dependências com o comando abaixo;
